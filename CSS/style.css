@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Acworth";
+    src: url(/fonts/acworth-bold.otf);
+}
+@font-face {
+    font-family: "KyivTypeSans";
+    src: url(/fonts/KyivTypeSans-VarGX.ttf);
+}
+@font-face {
+    font-family: "Geometria";
+    src: url(/fonts/geometria_medium.otf);
+}
+@font-face {
+    font-family: "Geometria-bold";
+    src: url(/fonts/geometria_bold.otf);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #DED4D2;
+    font-family: "Acworth";
+    font-weight: 700;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+
+
+    margin-left: 265px;
+    margin-right: 265px;
+}
+
+.title {
+    font-family: "Acworth";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+/* Navigation */
+.nav {
+    margin-bottom: 100px;
+
+    width: auto;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+
+    background-color: #232121;
+}
+
+.nav__inner {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 35px;
+}
+
+.nav__item {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.nav__link {
+    font-family: "KyivTypeSans";
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.nav__link:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    font-family: "KyivTypeSans";
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+
+    cursor:pointer;
+}
+
+/* Header */
+.first__titles {
+    position: absolute;
+    left: 27%;
+    top: 43%;
+    z-index: 3;
+}
+
+.sup__title {
+    font-family: "Acworth";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    align-self: center;
+    text-align: center;
+}
+
+.header__title {
+    font-family: "Acworth";
+    font-weight: 700;
+    font-size: 220px;
+    line-height: 1.2;
+    align-self: center;
+    text-align: center;
+}
+
+.header__item {
+    justify-content: center;
+
+    display: grid;
+
+    gap: 50px;
+    grid-template-columns: 430px 910px;
+    grid-auto-flow: column;
+    grid-template-areas: "a c" "b c";
+    /* justify-content: stretch; */
+
+}
+
+.header__image {
+    width: 430px;
+    height: 280px;
+    justify-content: stretch
+}
+
+.header__image-1 {
+    grid-area: a;
+}
+.header__image-2 {
+    grid-area: b;
+}
+.header__image-3 {
+    width: 910px;
+    height: 615px;
+    grid-area: c;
+}
+
+/* ****************** */
+/* Portfolio */
+
+.title--after{
+    position: relative;
+    text-align: right;
+    margin-top: 126px;
+    margin-bottom: -14px;
+    padding-right: 311px;
+}
+
+.title--after::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: "";
+    width: 290px;
+    height: 1px;
+    color: #000;
+    background-color: #000;
+}
+
+.portfolio__inner {
+    width: 50%;
+    max-width: 670px;
+    margin-right: 50px;
+}
+.portfolio__inner:last-child {
+    margin-right: 0;
+}
+
+.portfolio__img {
+    /* display: block; */
+    max-width: 670px;
+    max-height: 395px;
+}
+
+.portfolio__img.portfolio__img--bottom {
+    margin-bottom: 54px;
+}
+.portfolio__img.portfolio__img--top {
+    margin-top: 54px;
+}
+.button__inner {
+    text-align: center;
+
+    margin-top: 58px;
+}
+.button {
+    margin: 0 auto;
+    margin-bottom: 175px;
+
+    padding: 20px 61px;
+
+    font-family: "Geometria";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #000;
+    background-color: inherit;
+}
+
+/* *********** */
+/* About me */
+
+.title--before {
+    position: relative;
+    text-align: left;
+    margin-bottom: 54px;
+    padding-left: 265px;
+}
+
+.title--before::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "";
+    width: 245px;
+    height: 1px;
+    color: #000;
+    background-color: #000;
+}
+
