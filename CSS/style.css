@@ -208,6 +208,10 @@ header {
 
 /* *********** */
 /* About me */
+.about {
+    position: relative;
+    z-index: 1;
+}
 
 .title--before {
     position: relative;
@@ -227,3 +231,40 @@ header {
     background-color: #000;
 }
 
+.bio__photo {
+    text-align: right;
+    z-index: 1;
+}
+
+.bio__info {
+    position: absolute;
+    bottom: 50%;
+    left: 13%;
+    z-index: 3;
+
+    max-width: 1150px;
+    max-height: 528px;
+}
+
+.info__text {
+    position: relative;
+    font-size: 80px;
+    line-height: 1.2;
+    margin-top: 300px;
+}
+
+.info__text::before {
+    position: absolute;
+    content: "";
+    left: -22%;
+    top: 20px;
+    width: 245px;
+    height: 56px;
+
+    color: #B91616;
+    background-color: #B91616;
+}
+
+.span--red {
+    color: #B91616;
+}
